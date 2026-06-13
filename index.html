@@ -305,6 +305,114 @@ body {
   .dev-r, .cv-date { text-align: left; }
   .pr-main { font-size: 40px; }
 }
+
+/* ── TECH STACK PAGE ── */
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+.tech-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  background: rgba(200,146,42,0.03);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.tech-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.tech-card:hover { border-color: var(--border2); }
+.tech-card:hover::after { opacity: 1; }
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(200,146,42,0.1);
+  border: 1px solid var(--border2);
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.tech-name {
+  font-family: var(--fh);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+.tech-role {
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tech-desc {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.conclusion-block {
+  background: linear-gradient(135deg, rgba(200,146,42,0.07) 0%, rgba(200,146,42,0.02) 100%);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 36px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+.conclusion-block::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold2), var(--gold), var(--gold2));
+}
+.conclusion-block h3 {
+  font-family: var(--fh);
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: -0.2px;
+}
+.conclusion-block h3 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.conclusion-block p {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.conclusion-rule {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 20px auto;
+  max-width: 60px;
+}
+
 </style>
 </head>
 <body>
@@ -694,7 +802,83 @@ A premium digital presence keeps Lustro accessible at every moment. Prospective 
           <p style="font-size:12px;color:rgba(245,240,232,0.4);">&#8358;680,000</p>
         </div>
       </div>
+
+<!-- ══ PAGE 7: TECH STACK ══ -->
+<div class="page" id="p7">
+  <div class="sh">
+    <p class="sh-eyebrow">The Foundation</p>
+    <h2 class="sh-title">Built With Intention</h2>
+    <div class="sh-bar"></div>
+  </div>
+
+  <blockquote class="quote">
+    Every premium experience is built on an invisible foundation. The technology behind Lustro Lagos was chosen with the same deliberate precision that defines the brand itself — nothing arbitrary, nothing generic.
+  </blockquote>
+
+  <div class="tech-grid">
+    <div class="tech-card">
+      <span class="tech-tag">Framework</span>
+      <h4 class="tech-name">Next.js</h4>
+      <p class="tech-role">Server-Side Rendering</p>
+      <p class="tech-desc">Pages load instantly because content is rendered on the server before it reaches the guest's screen. Lustro doesn't make visitors wait — and neither does the website.</p>
     </div>
+    <div class="tech-card">
+      <span class="tech-tag">UI Library</span>
+      <h4 class="tech-name">React</h4>
+      <p class="tech-role">Component Architecture</p>
+      <p class="tech-desc">A modular, component-based structure built to scale. As Lustro adds properties, rooms, and features, the codebase grows cleanly without rebuilding from scratch.</p>
+    </div>
+    <div class="tech-card">
+      <span class="tech-tag">Language</span>
+      <h4 class="tech-name">TypeScript</h4>
+      <p class="tech-role">Type-Safe Development</p>
+      <p class="tech-desc">Strict typing catches errors before they reach production. The result is a more reliable, more maintainable codebase — one that behaves exactly as expected, every time.</p>
+    </div>
+    <div class="tech-card">
+      <span class="tech-tag">Styling</span>
+      <h4 class="tech-name">Tailwind CSS</h4>
+      <p class="tech-role">Precision Design System</p>
+      <p class="tech-desc">Pixel-perfect spacing, typography, and colour across every screen size. The visual precision you see on Lustro's website is enforced at the code level — not left to chance.</p>
+    </div>
+    <div class="tech-card">
+      <span class="tech-tag">Animation</span>
+      <h4 class="tech-name">GSAP</h4>
+      <p class="tech-role">Cinematic Motion Engine</p>
+      <p class="tech-desc">The animation engine trusted by the world's most premium digital experiences. Every entrance, transition, and reveal on the site is choreographed with GSAP's precision timing.</p>
+    </div>
+    <div class="tech-card">
+      <span class="tech-tag">Scroll</span>
+      <h4 class="tech-name">Lenis</h4>
+      <p class="tech-role">Silky Smooth Scrolling</p>
+      <p class="tech-desc">Lenis replaces the browser's default scroll with a buttery, momentum-based experience. It's the invisible detail that makes Lustro's website feel like a five-star product — not just look like one.</p>
+    </div>
+  </div>
+
+  <div class="conclusion-block">
+    <h3>
+      More Than a Website.<br>
+      <em>An Engineered Asset.</em>
+    </h3>
+    <div class="conclusion-rule"></div>
+    <p>
+      Lustro Lagos is not a brand that settles — and this website reflects that exactly.
+      Built on an industry-grade technology stack, designed with cinematic precision,
+      and deployed for long-term performance, this is not a template. It is a custom-engineered
+      digital asset built specifically for what Lustro is today — and what it is becoming.
+      Three properties. A proven track record. A brand Lagos already respects.
+      Now, the world can find it.
+    </p>
+  </div>
+
+  <div class="pf">
+    <div class="pf-left">
+      <span class="pf-co">© 2026 Lustro Lagos. All rights reserved.</span>
+      <span class="pf-ct">07068634125 · davidajibua78@gmail.com</span>
+    </div>
+    <span class="pf-pg">Page 07</span>
+   </div>
+ </div>
+</div>
 
     <ul class="inv-inc">
       <li><span class="inv-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Full Premium Hospitality Website</li>
