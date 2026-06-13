@@ -295,6 +295,9 @@ body {
 .dev-r p { font-size: 13px; color: var(--muted); line-height: 1.9; }
 .dev-r a { font-size: 13px; color: var(--terra); text-decoration: none; font-weight: 600; }
 
+/* ── Tech Stack Page ── */
+.stack-foot { margin-top: 28px; }
+
 /* ── Responsive ── */
 @media (max-width: 640px) {
   .page { padding: 36px 24px; min-height: auto; }
@@ -305,114 +308,6 @@ body {
   .dev-r, .cv-date { text-align: left; }
   .pr-main { font-size: 40px; }
 }
-
-/* ── TECH STACK PAGE ── */
-.tech-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-bottom: 40px;
-}
-.tech-card {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 24px;
-  background: rgba(200,146,42,0.03);
-  opacity: 0;
-  transform: translateY(16px);
-  transition: border-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-.tech-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.tech-card:hover { border-color: var(--border2); }
-.tech-card:hover::after { opacity: 1; }
-.tech-tag {
-  display: inline-flex;
-  align-items: center;
-  background: rgba(200,146,42,0.1);
-  border: 1px solid var(--border2);
-  color: var(--gold);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 3px;
-  margin-bottom: 14px;
-}
-.tech-name {
-  font-family: var(--fh);
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--cream);
-  margin-bottom: 6px;
-  letter-spacing: 0.02em;
-}
-.tech-role {
-  font-size: 11px;
-  color: var(--gold);
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.tech-desc {
-  font-size: 12.5px;
-  color: var(--muted);
-  line-height: 1.75;
-}
-.conclusion-block {
-  background: linear-gradient(135deg, rgba(200,146,42,0.07) 0%, rgba(200,146,42,0.02) 100%);
-  border: 1px solid var(--border2);
-  border-radius: 10px;
-  padding: 36px 40px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-}
-.conclusion-block::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--gold2), var(--gold), var(--gold2));
-}
-.conclusion-block h3 {
-  font-family: var(--fh);
-  font-size: 28px;
-  font-weight: 300;
-  color: var(--cream);
-  line-height: 1.2;
-  margin-bottom: 18px;
-  letter-spacing: -0.2px;
-}
-.conclusion-block h3 em {
-  font-style: italic;
-  color: var(--gold);
-}
-.conclusion-block p {
-  font-size: 13.5px;
-  color: var(--muted);
-  line-height: 1.85;
-  max-width: 560px;
-  margin: 0 auto;
-}
-.conclusion-rule {
-  width: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  margin: 20px auto;
-  max-width: 60px;
-}
-
 </style>
 </head>
 <body>
@@ -670,64 +565,62 @@ body {
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
       <div>
         <h4 class="ben-title">Capture More Direct Bookings</h4>
-        <p class="ben-desc">A polished, professional website transforms interest into action. Guests who discover Lustro through Google, Instagram, referrals, or online searches can move seamlessly from browsing to booking. By creating a direct booking channel, Lustro gains greater control over the guest experience while reducing dependence on third-party platforms and the commissions that come with them.</p>
+        <p class="ben-desc">A polished, professional website converts visitors who find Lustro through Google, Instagram, or word of mouth into confirmed bookings — directly, without paying commission to third-party platforms.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
       <div>
         <h4 class="ben-title">Elevate the Brand Above Competitors</h4>
-        <p class="ben-desc">Most shortlet operators in Lagos compete on listing platforms where every property looks similar. A luxury website gives Lustro its own digital destination, allowing the brand to tell its story, showcase its spaces, and communicate its value without limitations. The result is a stronger first impression, greater credibility, and a premium image that reflects the quality guests experience in person.</p>
+        <p class="ben-desc">Most shortlets in Lagos rely on Airbnb listings and Instagram pages. A luxury website immediately positions Lustro as a category above, projecting the same premium quality guests experience in person.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
       <div>
         <h4 class="ben-title">Attract Investors with Confidence</h4>
-        <p class="ben-desc">Investors are more likely to commit when information is presented clearly and professionally. Through a dedicated investment journey section, Lustro can showcase its track record, project performance, occupancy success, and growth story in a format that builds trust. Rather than simply hearing about the numbers, potential investors can see the journey, understand the model, and gain confidence in the opportunity.</p>
+        <p class="ben-desc">The investment journey section presents Lustro&#8217;s track record — &#8358;2M+ monthly revenue, three sold-out projects — in a format that gives serious investors the clarity they need to commit.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
       <div>
         <h4 class="ben-title">Always Open, Always Converting</h4>
-        <p class="ben-desc">Always Open, Always Converting
-
-A premium digital presence keeps Lustro accessible at every moment. Prospective guests can browse rooms, explore amenities, make enquiries, and connect instantly from anywhere in the world, at any time. By providing a seamless experience around the clock, the website continuously captures interest and converts it into valuable booking opportunities.</p>
+        <p class="ben-desc">Whether it&#8217;s 2am or 2pm, the website handles enquiries, showcases available rooms, displays dining hours, and routes guests to WhatsApp — keeping Lustro&#8217;s revenue pipeline active 24/7.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
       <div>
         <h4 class="ben-title">Grow the Dining Revenue Stream</h4>
-        <p class="ben-desc">Lustro Lagos Restaurant is a valuable part of the brand experience, yet many potential customers may never discover it. A dedicated dining section allows the restaurant to reach a wider audience by showcasing its ambience, menu offerings, and unique experiences. This creates opportunities to attract walk-in diners, private celebrations, corporate gatherings, and event bookings beyond the existing hotel guest base.</p>
+        <p class="ben-desc">Lustro Lagos Restaurant is open to the public, but most people don&#8217;t know it yet. A dedicated dining section and menu CTA brings in walk-in diners and private event bookings beyond the hotel guest base.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
       <div>
         <h4 class="ben-title">Build Long-term Guest Loyalty</h4>
-        <p class="ben-desc">The guest journey does not end after checkout. A premium website provides a central hub where past guests can easily reconnect with the brand, explore new offerings, make future reservations, and stay informed about upcoming experiences. By maintaining that connection, Lustro increases repeat visits, encourages referrals, and strengthens long-term customer relationships.</p>
+        <p class="ben-desc">Guests who discover Lustro through a premium digital experience remember it. Easy access to room options, menus, and contact keeps Lustro top of mind for every return visit, staycation, or celebration.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
       <div>
         <h4 class="ben-title">Scale Across Multiple Properties</h4>
-        <p class="ben-desc">As Lustro continues to grow, its digital presence should grow with it. The website is structured to accommodate new properties, concepts, and business ventures without requiring a complete redesign. Whether introducing Lustro Homes, Yankee by Lustro, or future developments, every addition can be integrated seamlessly under one unified brand ecosystem.</p>
+        <p class="ben-desc">The site is built to grow with Lustro. Lustro Homes, Yankee by Lustro, and future projects all live under one brand roof — making it easy to add new properties without rebuilding from scratch.</p>
       </div>
     </div>
     <div class="ben-card">
       <div class="ben-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
       <div>
         <h4 class="ben-title">A Long-term Business Asset</h4>
-        <p class="ben-desc">A website is not simply an expense for today; it is an asset that creates value for years to come. It strengthens brand authority, supports marketing efforts, generates leads, and serves as the foundation for future growth initiatives. As Lustro expands into online payments, reservations, loyalty programs, corporate partnerships, and new revenue streams, the platform is already positioned to support that evolution and maximize long-term returns.</p>
+        <p class="ben-desc">A website is not a one-time expense — it is a revenue asset. As Lustro grows into online payments, reservations, and corporate partnerships, this platform is already built to support that expansion.</p>
       </div>
     </div>
   </div>
 
   <blockquote class="quote quote-b">
-    Lagos offers no shortage of hospitality brands, yet few provide the level of experience that Lustro has become known for. The website reinforces that distinction from the very first interaction, reflecting the elegance, attention to detail, and exceptional service that define the Lustro experience long before a guest arrives.
+    Lagos has plenty of shortlets. There is only one Lustro. The website makes that distinction undeniable from the very first scroll — turning every online visitor into a guest who already feels the standard before they arrive.
   </blockquote>
 
   <div class="pf">
@@ -802,83 +695,7 @@ A premium digital presence keeps Lustro accessible at every moment. Prospective 
           <p style="font-size:12px;color:rgba(245,240,232,0.4);">&#8358;680,000</p>
         </div>
       </div>
-     </div>
-<!-- ══ PAGE 7: TECH STACK ══ -->
-<div class="page" id="p7">
-  <div class="sh">
-    <p class="sh-eyebrow">The Foundation</p>
-    <h2 class="sh-title">Built With Intention</h2>
-    <div class="sh-bar"></div>
-  </div>
-
-  <blockquote class="quote">
-    Every premium experience is built on an invisible foundation. The technology behind Lustro Lagos was chosen with the same deliberate precision that defines the brand itself — nothing arbitrary, nothing generic.
-  </blockquote>
-
-  <div class="tech-grid">
-    <div class="tech-card">
-      <span class="tech-tag">Framework</span>
-      <h4 class="tech-name">Next.js</h4>
-      <p class="tech-role">Server-Side Rendering</p>
-      <p class="tech-desc">Pages load instantly because content is rendered on the server before it reaches the guest's screen. Lustro doesn't make visitors wait — and neither does the website.</p>
     </div>
-    <div class="tech-card">
-      <span class="tech-tag">UI Library</span>
-      <h4 class="tech-name">React</h4>
-      <p class="tech-role">Component Architecture</p>
-      <p class="tech-desc">A modular, component-based structure built to scale. As Lustro adds properties, rooms, and features, the codebase grows cleanly without rebuilding from scratch.</p>
-    </div>
-    <div class="tech-card">
-      <span class="tech-tag">Language</span>
-      <h4 class="tech-name">TypeScript</h4>
-      <p class="tech-role">Type-Safe Development</p>
-      <p class="tech-desc">Strict typing catches errors before they reach production. The result is a more reliable, more maintainable codebase — one that behaves exactly as expected, every time.</p>
-    </div>
-    <div class="tech-card">
-      <span class="tech-tag">Styling</span>
-      <h4 class="tech-name">Tailwind CSS</h4>
-      <p class="tech-role">Precision Design System</p>
-      <p class="tech-desc">Pixel-perfect spacing, typography, and colour across every screen size. The visual precision you see on Lustro's website is enforced at the code level — not left to chance.</p>
-    </div>
-    <div class="tech-card">
-      <span class="tech-tag">Animation</span>
-      <h4 class="tech-name">GSAP</h4>
-      <p class="tech-role">Cinematic Motion Engine</p>
-      <p class="tech-desc">The animation engine trusted by the world's most premium digital experiences. Every entrance, transition, and reveal on the site is choreographed with GSAP's precision timing.</p>
-    </div>
-    <div class="tech-card">
-      <span class="tech-tag">Scroll</span>
-      <h4 class="tech-name">Lenis</h4>
-      <p class="tech-role">Silky Smooth Scrolling</p>
-      <p class="tech-desc">Lenis replaces the browser's default scroll with a buttery, momentum-based experience. It's the invisible detail that makes Lustro's website feel like a five-star product — not just look like one.</p>
-    </div>
-  </div>
-
-  <div class="conclusion-block">
-    <h3>
-      More Than a Website.<br>
-      <em>An Engineered Asset.</em>
-    </h3>
-    <div class="conclusion-rule"></div>
-    <p>
-      Lustro Lagos is not a brand that settles — and this website reflects that exactly.
-      Built on an industry-grade technology stack, designed with cinematic precision,
-      and deployed for long-term performance, this is not a template. It is a custom-engineered
-      digital asset built specifically for what Lustro is today — and what it is becoming.
-      Three properties. A proven track record. A brand Lagos already respects.
-      Now, the world can find it.
-    </p>
-  </div>
-
-  <div class="pf">
-    <div class="pf-left">
-      <span class="pf-co">© 2026 Lustro Lagos. All rights reserved.</span>
-      <span class="pf-ct">07068634125 · davidajibua78@gmail.com</span>
-    </div>
-    <span class="pf-pg">Page 07</span>
-   </div>
- </div>
-
 
     <ul class="inv-inc">
       <li><span class="inv-chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Full Premium Hospitality Website</li>
@@ -923,6 +740,65 @@ A premium digital presence keeps Lustro accessible at every moment. Prospective 
       <span class="pf-ct">07068634125 &middot; davidajibua78@gmail.com</span>
     </div>
     <span class="pf-pg">Page 6</span>
+  </div>
+</div>
+
+<!-- ══ PAGE 7: TECH STACK ══ -->
+<div class="page">
+  <div class="sh">
+    <h2 class="sh-title">Built With Intention</h2>
+    <p class="sh-sub">The Technology Behind the Experience</p>
+    <div class="sh-bar"></div>
+  </div>
+
+  <blockquote class="quote">
+    Every premium experience is built on an invisible foundation. This is ours.
+  </blockquote>
+
+  <div class="feat-grid">
+    <div class="feat-card">
+      <div class="feat-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <h4 class="feat-title">Next.js</h4>
+      <p class="feat-desc">Server-side rendering for lightning-fast page loads. The moment a guest lands on Lustro, every suite, video, and booking button is already there — no waiting, no blank screens, just an instant impression of quality.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)"/></svg></div>
+      <h4 class="feat-title">React</h4>
+      <p class="feat-desc">Component-based architecture built to scale. As Lustro grows — new suites, new properties, new sections — the foundation grows with it, without ever needing to be rebuilt from the ground up.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+      <h4 class="feat-title">TypeScript</h4>
+      <p class="feat-desc">Type-safe code means fewer bugs, more reliability in production. For a brand built on precision, the code behind the scenes holds itself to the same standard guests feel in every room.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></div>
+      <h4 class="feat-title">Tailwind CSS</h4>
+      <p class="feat-desc">A pixel-perfect design system where every spacing, colour, and typographic detail stays consistent across the entire site — the same precision Lustro brings to its interiors, carried into every pixel.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h4 class="feat-title">GSAP</h4>
+      <p class="feat-desc">The animation engine behind every cinematic scroll, fade, and entrance. It&#8217;s the quiet motion that makes the site feel less like a page and more like a film — exactly the impression Lustro is built to leave.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7c2.5-2 5-2 7 0s4.5 2 7 0 4.5-2 7 0"/><path d="M2 13c2.5-2 5-2 7 0s4.5 2 7 0 4.5-2 7 0"/><path d="M2 19c2.5-2 5-2 7 0s4.5 2 7 0 4.5-2 7 0"/></svg></div>
+      <h4 class="feat-title">Lenis</h4>
+      <p class="feat-desc">The silky smooth scroll that removes the stutter of an ordinary website. The result is a glide from section to section — the same effortless feeling guests have walking through a Lustro property.</p>
+    </div>
+  </div>
+
+  <div class="goal stack-foot">
+    <h4>WHY IT MATTERS</h4>
+    <p>None of this is visible to a guest — and that&#8217;s exactly the point. They won&#8217;t see the framework, the type-safety, or the animation library. What they&#8217;ll feel is a website that loads instantly, moves smoothly, and never breaks. That feeling is what builds trust before a single message is sent. This isn&#8217;t just a beautiful website — it&#8217;s an engineered asset, built with the same precision Lustro brings to every room, every dish, every detail. The technology is invisible. The standard it creates is not.</p>
+  </div>
+
+  <div class="pf">
+    <div class="pf-left">
+      <span class="pf-co">&#169; 2026 Lustro Lagos. All rights reserved.</span>
+      <span class="pf-ct">07068634125 &middot; davidajibua78@gmail.com</span>
+    </div>
+    <span class="pf-pg">Page 7</span>
   </div>
 </div>
 
